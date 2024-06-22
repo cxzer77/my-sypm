@@ -1,0 +1,7 @@
+<h1>Kemasukan Data</h1>
+
+<form action="{%  url 'sypm_data_form' %}" method="post">
+    {% csrf_token %}
+    {{ sypmform }}
+    <input type="submit" value="Tambah Data">
+</form>

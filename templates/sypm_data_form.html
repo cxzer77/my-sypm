@@ -1,0 +1,24 @@
+<h1>Kemasukan Data</h1>
+
+<h2>{{ note }}</h2>
+
+{#<form action="{%  url 'sypm_data_form' %}" method="post">#}
+{#    {% csrf_token %}#}
+{#    {{ sypm_data_form }}#}
+{#    <input type="submit" value="Tambah DataData">#}
+{#</form>#}
+<form action="{% url 'sypm_data_form' %}" method="post">
+    {% csrf_token %}
+    {{ sypmform }}
+{#    <label for="namapemohon">Nama Pemohon: </label>#}
+{#    <input id="namapemohon" type="text" name="namapemohon">#}
+{#    <label for="nokp">NoKp: </label>#}
+{#    <input id="nokp" type="text" name="nokp">#}
+{#    <label for="jenisbantuan">JenisBantuan: </label>#}
+{#    <select id="jenisbantuan" name="jenisbantuan">#}
+{#            <option value="Bantuan Tunai">Bantuan Tunai</option>#}
+{#            <option value="Bantuan Peralatan">Bantuan Peralatan</option>#}
+{#            <option value="Bantuan ICT">Bantuan ICT</option>#}
+{#    </select>#}
+    <input type="submit" value="Simpan Data">
+</form>
